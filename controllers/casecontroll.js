@@ -1,6 +1,6 @@
 const Case = require("../models/casemodel");
 
-// ✅ Create Case
+// ✅ Create 
 exports.createcase = async (req, res) => {
   const { customer_id, assigned_to, priority, status, subject, description } = req.body;
 
@@ -35,7 +35,7 @@ exports.getcase = async (req, res) => {
   }
 };
 
-// ✅ Update case by ID
+// ✅ Update case 
 exports.updatecase = async (req, res) => {
   try {
     const { id } = req.params;
@@ -56,7 +56,7 @@ exports.updatecase = async (req, res) => {
   }
 };
 
-// ✅ Delete case
+// ✅ Delete
 exports.deletecase = async (req, res) => {
   try {
     const { id } = req.params;
